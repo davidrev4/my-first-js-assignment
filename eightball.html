@@ -8,32 +8,37 @@
 </head>
 <body>
     <script>
-        var userName = 'jane';
-        if (userName = 'jane'){
-            console.log(`Hello ${userName}`)
+        let userName = prompt("what is your name: ")
+        userName ? console.log(`Hello ${userName}!`) : console.log(`Hello`)
+        let userQuestion =  prompt("what is your question: ")
+        userName ? console.log(`${userName} your question was ${userQuestion}`) : console.log(`your question was ${userQuestion}`)
+        let randomnumber = Math.floor(Math.random() * 8);
+        let eightball ="";
+        if (randomnumber === 1) {
+            eightball = "yes"
         }
-        else{
-            console.log (Hello)
+        else if (randomnumber === 2) {
+            eightball = "no"
         }
-        var userQuestion = "who are you";
-        console.log(`${userQuestion}`);
-        //var randomNumber = (Math.floor() && Math.random() * 8);
-        var eightBall = '';
-        if (userQuestion = "What is your name") 
-            console.log("it is fine");
-        
-        else if (userQuestion = "what is my name") 
-                console.log(`Your name is ${userName}`);
-        
-        else if (userQuestion = "where i'm i from") 
-                console.log("Not certain");
-        
-        else if (userQuestion = "who are you") 
-                console.log("Please ask a different question");
-        
-        else {
-            consol.log("Please reconnect and try again");
+        else if (randomnumber === 3 ) {
+            eightball = "maybe"
         }
+        else if (randomnumber === 4) {
+            eightball = "not sure"
+        }
+        else if (randomnumber === 5) {
+            eightball = "it is certain"
+        }
+        else if (randomnumber === 6) {
+            eightball = "my source says no"
+        }
+        else if (randomnumber === 7) {
+            eightball = "can not predict now"
+        }
+        else if (randomnumber === 8) {
+            eightball = "it is hapharzly so"
+        }
+        console.log(eightball)
     </script>
 </body>
 </html>
