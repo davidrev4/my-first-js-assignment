@@ -8,25 +8,34 @@
 </head>
 <body>
     <script>
-        const code = 123
-        let balance = 3000000
-        console.log(Number(prompt(`please type in code:`)))
-        if (Number = code){
-            console.log(prompt(`please type in 1 to withdraw
-please type in 2 to check balance`))
-            if (1){
-            var amount = prompt(`please type in amount: `)
-            console.log(`current balance = ${balance - amount}`)
+        let name = "David"
+        pinbase = ["1234", "5678", "9012"]
+        balance = 3000000
+        pin = prompt("what is your pin?: ")
+        if (pinbase.includes(pin)) {
+            console.log(`welcome to your account ${name}`);
+            let service = prompt(("what would you like to do today 1. to withdraw 2. to checkbalance 3. to deposite")) 
+            switch (service) {
+                case "1":
+                    let amount = parseInt(prompt("how much will you like to withdraw?: "))
+                    balance = balance - amount
+                    console.log(balance)
+                    break;
+                case "2":
+                    console.log(balance)
+                    break;
+                case "3":
+                    let newAmount = parseInt(prompt("how much will you like to deposite?: "))
+                    balance = balance + newAmount
+                    console.log(balance)
+                    break;
+                default :
+                console.log("incorrect pin please try again with the options given to you")
             }
-            else if (2){
-                console.log(`your current balance is ${balance}`)
-            }
-
-}
-else{
-    console.log(`incorrect code`)
-}
-        
+        }
+        else {
+            console.log("incorrect in after a few trialse you will be band be wise")
+        }
     </script>
 </body>
 </html>
